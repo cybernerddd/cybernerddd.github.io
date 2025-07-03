@@ -54,42 +54,84 @@
       color: #888;
     }
     .typewriter-text {
-  display: inline-block;
-  overflow: hidden;
-  border-right: none;
-  white-space: nowrap;
-  width: 0;
-  animation: typing 4s steps(40, end) forwards;
-}
+      display: inline-block;
+      overflow: hidden;
+      border-right: none;
+      white-space: nowrap;
+      width: 0;
+      animation: typing 4s steps(40, end) forwards;
+    }
 
-.cursor {
-  display: inline-block;
-  color: #00ffcc;
-  animation: blink 0.7s infinite;
-  font-weight: bold;
-}
+    .cursor {
+      display: inline-block;
+      color: #00ffcc;
+      animation: blink 0.7s infinite;
+      font-weight: bold;
+    }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 45ch } /* adjust length based on text */
-}
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 45ch }
+    }
 
-@keyframes blink {
-  0%, 50%, 100% { opacity: 1 }
-  25%, 75% { opacity: 0 }
-}
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1 }
+      25%, 75% { opacity: 0 }
+    }
 
+    .about {
+      margin-top: 2rem;
+    }
+
+    .about h2 {
+      color: #00ffee;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .about ul {
+      padding-left: 1.5rem;
+    }
+
+    .about li {
+      margin-bottom: 0.5rem;
+    }
+
+    blockquote {
+      color: #888;
+      font-style: italic;
+      border-left: 2px solid #00ffcc;
+      padding-left: 1rem;
+      margin-top: 1.5rem;
+    }
   </style>
 </head>
 <body>
   <h1>CYBERNERDDD</h1>
   <p class="tagline"><span class="typewriter-text"></span><span class="cursor">|</span></p>
 
+  <hr>
+
+  <!-- 🔥 ABOUT ME SECTION -->
+  <section class="about">
+    <h2>🧠 About Me</h2>
+    <p>Hey, I’m Cybernerddd — a focused Red Team Apprentice and Web App Hacking enthusiast studying at IPMC.</p>
+    <ul>
+      <li>🎯 Specializing in: Web Exploitation, Command Injection, and XSS</li>
+      <li>🛠️ Tools I use: Kali Linux, Nmap, Burp Suite, Hydra, Metasploit, and custom payloads</li>
+      <li>🔭 Building: My offensive security lab with Metasploitable and Raspberry Pi Zero 2 W</li>
+      <li>📚 Learning: JavaScript for bug bounty, Security+, and HTML filter bypass</li>
+      <li>📓 Documenting: Labs, CTFs, and research on GitHub</li>
+    </ul>
+    <blockquote>
+      "I walked into this field with no connections, no shortcuts, and no idea what a subnet mask was... But guess what? I learned. I adapted. I conquered."
+    </blockquote>
+  </section>
 
   <hr>
 
   <p>💻 Red Team Apprentice | Web App Hacker | InfoSec Maniac</p>
-  <p>📬 <a href="cybernerddd@gmail.com">cybernerddd@gmail.com</a></p>
+  <p>📬 <a href="mailto:cybernerddd@gmail.com">cybernerddd@gmail.com</a></p>
 
   <p>🧠 Currently Studying: Security+, JavaScript for Web Hacking, and RFCs</p>
   <p>📂 View My Labs & Notes:  
@@ -110,10 +152,10 @@
   </div>
   
   <script>
-  const text = `"I don’t hack for fame. I hack for proof."`;
-  const span = document.querySelector('.typewriter-text');
-  span.textContent = text;
-</script>
+    const text = `"I don’t hack for fame. I hack for proof."`;
+    const span = document.querySelector('.typewriter-text');
+    span.textContent = text;
+  </script>
 
 </body>
 </html>

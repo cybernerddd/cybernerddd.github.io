@@ -12,25 +12,31 @@
       padding: 40px;
       line-height: 1.6;
     }
+
     h1 {
       color: #00ffee;
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
+
     p {
       font-size: 1.1rem;
     }
+
     a {
       color: #00ffcc;
       text-decoration: none;
     }
+
     a:hover {
       color: #ff0066;
       text-decoration: underline;
     }
+
     .contact-form {
       margin-top: 2rem;
     }
+
     input, textarea, button {
       width: 100%;
       background: #111;
@@ -40,19 +46,23 @@
       margin: 10px 0;
       font-family: inherit;
     }
+
     button:hover {
       background-color: #00ffcc;
       color: #000;
       cursor: pointer;
     }
+
     hr {
       border: 1px solid #00ffcc;
       margin: 2rem 0;
     }
+
     .tagline {
       font-style: italic;
       color: #888;
     }
+
     .typewriter-text {
       display: inline-block;
       overflow: hidden;
@@ -104,40 +114,42 @@
       padding-left: 1rem;
       margin-top: 1.5rem;
     }
+
+    /* 💻 Skills Bar */
     .skills {
-  margin-top: 2rem;
-}
+      margin-top: 2rem;
+      max-width: 600px;
+    }
 
-.skill {
-  margin-bottom: 1.5rem;
-}
+    .skill {
+      margin-bottom: 1.5rem;
+    }
 
-.skill p {
-  margin: 0 0 5px 0;
-  font-weight: bold;
-  color: #00ffee;
-}
+    .skill p {
+      margin: 0 0 5px 0;
+      font-weight: bold;
+      color: #00ffee;
+    }
 
-.bar {
-  width: 100%;
-  background-color: #222;
-  border: 1px solid #00ffcc;
-  height: 25px;
-  border-radius: 5px;
-  overflow: hidden;
-}
+    .bar {
+      width: 100%;
+      background-color: #222;
+      border: 1px solid #00ffcc;
+      height: 25px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
 
-.progress {
-  height: 100%;
-  background-color: #00ffcc;
-  color: #000;
-  text-align: right;
-  padding-right: 10px;
-  line-height: 25px;
-  font-weight: bold;
-  transition: width 1s ease-in-out;
-}
-
+    .progress {
+      height: 100%;
+      background-color: #00ffcc;
+      color: #000;
+      text-align: right;
+      padding-right: 10px;
+      line-height: 25px;
+      font-weight: bold;
+      width: 0;
+    }
   </style>
 </head>
 <body>
@@ -151,45 +163,48 @@
     <h2>🧠 About Me</h2>
     <p>Hey, I’m Cybernerddd — a focused Red Team Apprentice and Web App Hacking enthusiast studying at IPMC.</p>
     <ul>
-      <li>🎯 Specializing in: Web Exploitation, Command Injection, and XSS</li>
-      <li>🛠️ Tools I use: Kali Linux, Nmap, Burp Suite, Hydra, Metasploit, and custom payloads</li>
-      <li>🔭 Building: My offensive security lab with Metasploitable and Raspberry Pi Zero 2 W</li>
-      <li>📚 Learning: JavaScript for bug bounty, Security+, and HTML filter bypass</li>
-      <li>📓 Documenting: Labs, CTFs, and research on GitHub and medium @cybernerddd</li>
+      <li>🎯 Specializing in: Web Exploitation, XSS, and Filter Bypass</li>
+      <li>🛠️ Tools I use: Kali Linux, Burp Suite, Hydra, Metasploit, and Nmap</li>
+      <li>🔭 Building: My offensive lab with Metasploitable and Raspberry Pi Zero 2 W</li>
+      <li>📚 Learning: JavaScript for bug bounty, Security+, and RFCs</li>
+      <li>📓 Documenting: Labs, CTFs, and research on GitHub and Medium @cybernerddd</li>
     </ul>
     <blockquote>
       "I walked into this field with no connections, no shortcuts, and no idea what a subnet mask was... But guess what? I learned. I adapted. I conquered."
     </blockquote>
   </section>
 
-    <section class="skills">
-  <h2>🧠 Skills Progress</h2>
+  <hr>
 
-  <div class="skill">
-    <p>Kali Linux</p>
-    <div class="bar"><div class="progress" style="width: 85%;">85%</div></div>
-  </div>
+  <!-- ⚡ SKILLS PROGRESS BAR -->
+  <section class="skills">
+    <h2>📊 Skill Progress</h2>
 
-  <div class="skill">
-    <p>Burp Suite</p>
-    <div class="bar"><div class="progress" style="width: 75%;">75%</div></div>
-  </div>
+    <div class="skill">
+      <p>Web App Hacking</p>
+      <div class="bar"><div class="progress" style="--target:85%">85%</div></div>
+    </div>
 
-  <div class="skill">
-    <p>JavaScript</p>
-    <div class="bar"><div class="progress" style="width: 65%;">65%</div></div>
-  </div>
+    <div class="skill">
+      <p>Kali Linux</p>
+      <div class="bar"><div class="progress" style="--target:80%">80%</div></div>
+    </div>
 
-  <div class="skill">
-    <p>Metasploit</p>
-    <div class="bar"><div class="progress" style="width: 50%;">50%</div></div>
-  </div>
+    <div class="skill">
+      <p>Packet Sniffing</p>
+      <div class="bar"><div class="progress" style="--target:70%">70%</div></div>
+    </div>
 
-  <div class="skill">
-    <p>Command Injection</p>
-    <div class="bar"><div class="progress" style="width: 60%;">60%</div></div>
-  </div>
-</section>
+    <div class="skill">
+      <p>JavaScript</p>
+      <div class="bar"><div class="progress" style="--target:60%">60%</div></div>
+    </div>
+
+    <div class="skill">
+      <p>Metasploit</p>
+      <div class="bar"><div class="progress" style="--target:50%">50%</div></div>
+    </div>
+  </section>
 
   <hr>
 
@@ -213,12 +228,20 @@
       <button type="submit">Send Message</button>
     </form>
   </div>
-  
+
   <script>
+    // Typewriter effect
     const text = `"I don’t hack for fame. I hack for proof."`;
     const span = document.querySelector('.typewriter-text');
     span.textContent = text;
-  </script>
 
+    // Progress bar animation
+    document.querySelectorAll('.progress').forEach(bar => {
+      const target = bar.style.getPropertyValue('--target');
+      setTimeout(() => {
+        bar.style.width = target;
+      }, 500);
+    });
+  </script>
 </body>
 </html>

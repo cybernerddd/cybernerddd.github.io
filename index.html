@@ -53,11 +53,38 @@
       font-style: italic;
       color: #888;
     }
+    .typewriter-text {
+  display: inline-block;
+  overflow: hidden;
+  border-right: none;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 4s steps(40, end) forwards;
+}
+
+.cursor {
+  display: inline-block;
+  color: #00ffcc;
+  animation: blink 0.7s infinite;
+  font-weight: bold;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 33ch } /* adjust length based on text */
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1 }
+  25%, 75% { opacity: 0 }
+}
+
   </style>
 </head>
 <body>
   <h1>CYBERNERDDD</h1>
-  <p class="tagline">"I don’t hack for fame. I hack for proof."</p>
+  <p class="tagline"><span class="typewriter-text"></span><span class="cursor">|</span></p>
+
 
   <hr>
 
@@ -81,5 +108,12 @@
       <button type="submit">Send Message</button>
     </form>
   </div>
+  
+  <script>
+  const text = `"I don’t hack for fame. I hack for proof."`;
+  const span = document.querySelector('.typewriter-text');
+  span.textContent = text;
+</script>
+
 </body>
 </html>

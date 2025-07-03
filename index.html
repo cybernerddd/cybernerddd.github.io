@@ -104,6 +104,40 @@
       padding-left: 1rem;
       margin-top: 1.5rem;
     }
+    .skills {
+  margin-top: 2rem;
+}
+
+.skill {
+  margin-bottom: 1.5rem;
+}
+
+.skill p {
+  margin: 0 0 5px 0;
+  font-weight: bold;
+  color: #00ffee;
+}
+
+.bar {
+  width: 100%;
+  background-color: #222;
+  border: 1px solid #00ffcc;
+  height: 25px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #00ffcc;
+  color: #000;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 25px;
+  font-weight: bold;
+  transition: width 1s ease-in-out;
+}
+
   </style>
 </head>
 <body>
@@ -127,6 +161,35 @@
       "I walked into this field with no connections, no shortcuts, and no idea what a subnet mask was... But guess what? I learned. I adapted. I conquered."
     </blockquote>
   </section>
+
+    <section class="skills">
+  <h2>🧠 Skills Progress</h2>
+
+  <div class="skill">
+    <p>Kali Linux</p>
+    <div class="bar"><div class="progress" style="width: 85%;">85%</div></div>
+  </div>
+
+  <div class="skill">
+    <p>Burp Suite</p>
+    <div class="bar"><div class="progress" style="width: 75%;">75%</div></div>
+  </div>
+
+  <div class="skill">
+    <p>JavaScript</p>
+    <div class="bar"><div class="progress" style="width: 65%;">65%</div></div>
+  </div>
+
+  <div class="skill">
+    <p>Metasploit</p>
+    <div class="bar"><div class="progress" style="width: 50%;">50%</div></div>
+  </div>
+
+  <div class="skill">
+    <p>Command Injection</p>
+    <div class="bar"><div class="progress" style="width: 60%;">60%</div></div>
+  </div>
+</section>
 
   <hr>
 

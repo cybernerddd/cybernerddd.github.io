@@ -1,18 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Cybernerddd</title>
+  <meta charset="UTF-8">
+  <title>Cybernerddd | Red Team Operator</title>
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #00ffcc;
+      font-family: "Courier New", Courier, monospace;
+      margin: 0;
+      padding: 40px;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #00ffee;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+    a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff0066;
+      text-decoration: underline;
+    }
+    .contact-form {
+      margin-top: 2rem;
+    }
+    input, textarea, button {
+      width: 100%;
+      background: #111;
+      color: #00ffcc;
+      border: 1px solid #00ffcc;
+      padding: 10px;
+      margin: 10px 0;
+      font-family: inherit;
+    }
+    button:hover {
+      background-color: #00ffcc;
+      color: #000;
+      cursor: pointer;
+    }
+    hr {
+      border: 1px solid #00ffcc;
+      margin: 2rem 0;
+    }
+    .tagline {
+      font-style: italic;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Cybernerddd's Site</h1>
-  <p>I’m hacking systems and building my brand.</p>
-  <p>Contact: <a href="mailto:cybernerdddd@proton.me">cybernerdddd@proton.me</a></p>
-      <form action="https://formspree.io/f/mjkrlneb/send/cybernerddd@proton.me" method="POST">
-  <input name="name" type="text" placeholder="Name"><br>
-  <input name="email" type="email" placeholder="Email"><br>
-  <textarea name="message" placeholder="Message"></textarea><br>
-  <button type="submit">Send</button>
-      </form>
+  <h1>CYBERNERDDD</h1>
+  <p class="tagline">"I don’t hack for fame. I hack for proof."</p>
 
+  <hr>
+
+  <p>💻 Red Team Apprentice | Web App Hacker | InfoSec Maniac</p>
+  <p>📬 <a href="mailto:cybernerdddd@proton.me">cybernerdddd@proton.me</a></p>
+
+  <p>🧠 Currently Studying: Security+, JavaScript for Web Hacking, and RFCs</p>
+  <p>📂 View My Labs & Notes:  
+    <a href="https://github.com/Cybernerddd/web-app-hacking" target="_blank">Web Hacking Repo</a>  
+    •  
+    <a href="https://github.com/Cybernerddd/SecurityPlus-Notes" target="_blank">Security+ Notes</a>
+  </p>
+
+  <hr>
+
+  <div class="contact-form">
+    <form action="https://formspree.io/f/mjkrlneb" method="POST">
+      <input name="name" type="text" placeholder="Name" required>
+      <input name="email" type="email" placeholder="Email" required>
+      <textarea name="message" rows="4" placeholder="Drop your message here..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
 </body>
 </html>

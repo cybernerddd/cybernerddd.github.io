@@ -1,260 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
-  <meta charset="UTF-8">
-  <title>Cybernerddd | Red Team Operator</title>
-  <style>
-    body {
-      background-color: #0a0a0a;
-      color: #00ffcc;
-      font-family: "Courier New", Courier, monospace;
-      margin: 0;
-      padding: 40px;
-      line-height: 1.6;
-    }
-
-    h1 {
-      color: #00ffee;
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      font-size: 1.1rem;
-    }
-
-    a {
-      color: #00ffcc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: #ff0066;
-      text-decoration: underline;
-    }
-
-    .contact-form {
-      margin-top: 2rem;
-    }
-
-    input, textarea, button {
-      width: 100%;
-      background: #111;
-      color: #00ffcc;
-      border: 1px solid #00ffcc;
-      padding: 10px;
-      margin: 10px 0;
-      font-family: inherit;
-    }
-
-    button:hover {
-      background-color: #00ffcc;
-      color: #000;
-      cursor: pointer;
-    }
-
-    hr {
-      border: 1px solid #00ffcc;
-      margin: 2rem 0;
-    }
-
-    .tagline {
-      font-style: italic;
-      color: #888;
-    }
-
-    .typewriter-text {
-      display: inline-block;
-      overflow: hidden;
-      border-right: none;
-      white-space: nowrap;
-      width: 0;
-      animation: typing 4s steps(40, end) forwards;
-    }
-
-    .cursor {
-      display: inline-block;
-      color: #00ffcc;
-      animation: blink 0.7s infinite;
-      font-weight: bold;
-    }
-
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 45ch }
-    }
-
-    @keyframes blink {
-      0%, 50%, 100% { opacity: 1 }
-      25%, 75% { opacity: 0 }
-    }
-
-    .about {
-      margin-top: 2rem;
-    }
-
-    .about h2 {
-      color: #00ffee;
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-
-    .about ul {
-      padding-left: 1.5rem;
-    }
-
-    .about li {
-      margin-bottom: 0.5rem;
-    }
-
-    blockquote {
-      color: #888;
-      font-style: italic;
-      border-left: 2px solid #00ffcc;
-      padding-left: 1rem;
-      margin-top: 1.5rem;
-    }
-
-    /* 💻 Skills Bar */
-    .skills {
-      margin-top: 2rem;
-      max-width: 600px;
-    }
-
-    .skill {
-      margin-bottom: 1.5rem;
-    }
-
-    .skill p {
-      margin: 0 0 5px 0;
-      font-weight: bold;
-      color: #00ffee;
-    }
-
-    .bar {
-      width: 100%;
-      background-color: #222;
-      border: 1px solid #00ffcc;
-      height: 25px;
-      border-radius: 5px;
-      overflow: hidden;
-    }
-
-    .progress {
-      height: 100%;
-      background-color: #00ffcc;
-      color: #000;
-      text-align: right;
-      padding-right: 10px;
-      line-height: 25px;
-      font-weight: bold;
-      width: 0;
-    }
-    .logo {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 80px; /* resize as needed */
-  height: auto;
-  border: 2px solid #00ffcc;
-  padding: 5px;
-  background-color: #0a0a0a;
-  border-radius: 8px;
-  box-shadow: 0 0 10px #00ffcc;
-}
-
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cybernerddd • Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <img src="cybernerddd_logo.png" alt="Cybernerddd Logo" class="logo">
-  <h1>CYBERNERDDD</h1>
-  <p class="tagline"><span class="typewriter-text"></span><span class="cursor">|</span></p>
-
-  <hr>
-
-  <!-- 🔥 ABOUT ME SECTION -->
-  <section class="about">
-    <h2>🧠 About Me</h2>
-    <p>Hey, I’m Cybernerddd — a focused Red Team Apprentice and Web App Hacking enthusiast studying at IPMC.</p>
-    <ul>
-      <li>🎯 Specializing in: Web Exploitation, XSS, and Filter Bypass</li>
-      <li>🛠️ Tools I use: Kali Linux, Burp Suite, Hydra, Metasploit, and Nmap</li>
-      <li>🔭 Building: My offensive lab with Metasploitable and Raspberry Pi Zero 2 W</li>
-      <li>📚 Learning: JavaScript for bug bounty, Security+, and RFCs</li>
-      <li>📓 Documenting: Labs, CTFs, and research on GitHub and Medium @cybernerddd</li>
-    </ul>
-    <blockquote>
-      "I walked into this field with no connections, no shortcuts, and no idea what a subnet mask was... But guess what? I learned. I adapted. I conquered."
-    </blockquote>
-  </section>
-
-  <hr>
-
-  <!-- ⚡ SKILLS PROGRESS BAR -->
-  <section class="skills">
-    <h2>📊 Skill Progress</h2>
-
-    <div class="skill">
-      <p>Web App Hacking</p>
-      <div class="bar"><div class="progress" style="--target:85%">85%</div></div>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">CYBERNERDDD</div>
+      <button id="themeToggle" class="theme-btn">🌓</button>
     </div>
+  </header>
 
-    <div class="skill">
-      <p>Kali Linux</p>
-      <div class="bar"><div class="progress" style="--target:80%">80%</div></div>
-    </div>
-
-    <div class="skill">
-      <p>Packet Sniffing</p>
-      <div class="bar"><div class="progress" style="--target:70%">70%</div></div>
-    </div>
-
-    <div class="skill">
-      <p>JavaScript</p>
-      <div class="bar"><div class="progress" style="--target:60%">60%</div></div>
-    </div>
-
-    <div class="skill">
-      <p>Metasploit</p>
-      <div class="bar"><div class="progress" style="--target:50%">50%</div></div>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Hey, I'm <span>Cybernerddd</span></h1>
+        <p>Web Application Hacker • Red Teamer • Social Engineer • Creator</p>
+        <p class="sub">Focused on mastering OWASP, real‑world pentesting, and next‑generation cybersecurity tools.</p>
+      </div>
+      <div class="hero-img">
+        <!-- Placeholder for now -->
+        <div class="img-placeholder">Your Image Here</div>
+      </div>
     </div>
   </section>
 
-  <hr>
+  <!-- SPECIALTIES -->
+  <section class="specialties">
+    <div class="container">
+      <h2>What I Do</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Web Hacking</h3>
+          <p>Mastering OWASP Top 10, real-world exploitation, payload engineering, and full web application pentesting.</p>
+        </div>
+        <div class="card">
+          <h3>Red Team Ops</h3>
+          <p>End-to-end attack simulation, social engineering, malicious delivery, and bypass methodology.</p>
+        </div>
+        <div class="card">
+          <h3>Tool Development</h3>
+          <p>Building offensive tools in Python — sniffers, spoofers, payload generators, and automation utilities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <p>💻 Red Team Apprentice | Web App Hacker | InfoSec Maniac</p>
-  <p>📬 <a href="mailto:cybernerddd@gmail.com">cybernerddd@gmail.com</a></p>
+  <!-- CERTIFICATIONS -->
+  <section class="certs">
+    <div class="container">
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li>CompTIA Security+ (In Progress)</li>
+        <li>Web Application Pentesting Track (Ongoing)</li>
+        <li class="placeholder">+ Add More As You Earn Them</li>
+      </ul>
+    </div>
+  </section>
 
-  <p>🧠 Currently Studying: Security+, JavaScript for Web Hacking, and RFCs</p>
-  <p>📂 View My Labs & Notes:  
-    <a href="https://github.com/Cybernerddd/web-app-hacking" target="_blank">Web Hacking Repo</a>  
-    •  
-    <a href="https://github.com/Cybernerddd/SecurityPlus-Notes" target="_blank">Security+ Notes</a>
-  </p>
+  <!-- PROJECTS -->
+  <section class="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="grid-2">
+        <div class="proj-card">
+          <h3>Packet Sniffer</h3>
+          <p>Python-based sniffer capturing live packets with filtering, CLI options, and GitHub documentation.</p>
+        </div>
+        <div class="proj-card">
+          <h3>ARP Spoofer</h3>
+          <p>MITM attack tool coded in Python — polished for GitHub with arguments, safety notes, and usage guide.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <hr>
+  <!-- BLOG -->
+  <section class="blog">
+    <div class="container">
+      <h2>Payload of the Day</h2>
+      <p>Daily drops of hacking payloads, XSS tricks, and real‑world exploitation notes. Posted on Hashnode.</p>
+      <button class="btn">Visit Blog</button>
+    </div>
+  </section>
 
-  <div class="contact-form">
-    <form action="https://formspree.io/f/mjkrlneb" method="POST">
-      <input name="name" type="text" placeholder="Name" required>
-      <input name="email" type="email" placeholder="Email" required>
-      <textarea name="message" rows="4" placeholder="Drop your message here..." required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
+  <!-- CONTACT -->
+  <section class="contact">
+    <div class="container">
+      <h2>Let's Connect</h2>
+      <p>Open for collaborations, cybersecurity projects, and creative builds.</p>
+      <button class="btn">Reach Out</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Cybernerddd • All Rights Reserved</p>
+  </footer>
 
   <script>
-    // Typewriter effect
-    const text = `"I don’t hack for fame. I hack for proof."`;
-    const span = document.querySelector('.typewriter-text');
-    span.textContent = text;
+    const html = document.documentElement;
+    const toggle = document.getElementById('themeToggle');
 
-    // Progress bar animation
-    document.querySelectorAll('.progress').forEach(bar => {
-      const target = bar.style.getPropertyValue('--target');
-      setTimeout(() => {
-        bar.style.width = target;
-      }, 500);
+    toggle.addEventListener('click', () => {
+      html.classList.toggle('light');
     });
   </script>
 </body>

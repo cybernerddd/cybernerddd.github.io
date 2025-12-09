@@ -1,114 +1,72 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cybernerddd • Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybernerddd</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+      color: #00ffe7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    header {
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .skill {
+      background: #1f1f2e;
+      border: 1px solid #00ffe7;
+      padding: 1rem;
+      border-radius: 8px;
+      width: 200px;
+    }
+    footer {
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container nav">
-      <div class="logo">CYBERNERDDD</div>
-      <button id="themeToggle" class="theme-btn">🌓</button>
-    </div>
+  <header>
+    <h1>Cybernerddd</h1>
+    <p>Technical architect, OSINT specialist, and automation wizard. 18+ years of digital mastery.</p>
   </header>
-
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1>Hey, I'm <span>Cybernerddd</span></h1>
-        <p>Web Application Hacker • Red Teamer • Social Engineer • Creator</p>
-        <p class="sub">Focused on mastering OWASP, real‑world pentesting, and next‑generation cybersecurity tools.</p>
-      </div>
-      <div class="hero-img">
-        <!-- Placeholder for now -->
-        <div class="img-placeholder">Your Image Here</div>
-      </div>
-    </div>
+  <section class="skills">
+    <div class="skill">Python & Recon Tools</div>
+    <div class="skill">Web Automation & Anti-Bot Bypass</div>
+    <div class="skill">Massive Dataset Structuring</div>
+    <div class="skill">Next.js & UI/UX Debugging</div>
+    <div class="skill">SaaS MVP Architectures</div>
+    <div class="skill">Donor/Medical Web Apps</div>
+    <div class="skill">Digital Business Card Platforms</div>
   </section>
-
-  <!-- SPECIALTIES -->
-  <section class="specialties">
-    <div class="container">
-      <h2>What I Do</h2>
-      <div class="grid-3">
-        <div class="card">
-          <h3>Web Hacking</h3>
-          <p>Mastering OWASP Top 10, real-world exploitation, payload engineering, and full web application pentesting.</p>
-        </div>
-        <div class="card">
-          <h3>Red Team Ops</h3>
-          <p>End-to-end attack simulation, social engineering, malicious delivery, and bypass methodology.</p>
-        </div>
-        <div class="card">
-          <h3>Tool Development</h3>
-          <p>Building offensive tools in Python — sniffers, spoofers, payload generators, and automation utilities.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CERTIFICATIONS -->
-  <section class="certs">
-    <div class="container">
-      <h2>Certifications</h2>
-      <ul class="cert-list">
-        <li>CompTIA Security+ (In Progress)</li>
-        <li>Web Application Pentesting Track (Ongoing)</li>
-        <li class="placeholder">+ Add More As You Earn Them</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="projects">
-    <div class="container">
-      <h2>Featured Projects</h2>
-      <div class="grid-2">
-        <div class="proj-card">
-          <h3>Packet Sniffer</h3>
-          <p>Python-based sniffer capturing live packets with filtering, CLI options, and GitHub documentation.</p>
-        </div>
-        <div class="proj-card">
-          <h3>ARP Spoofer</h3>
-          <p>MITM attack tool coded in Python — polished for GitHub with arguments, safety notes, and usage guide.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BLOG -->
-  <section class="blog">
-    <div class="container">
-      <h2>Payload of the Day</h2>
-      <p>Daily drops of hacking payloads, XSS tricks, and real‑world exploitation notes. Posted on Hashnode.</p>
-      <button class="btn">Visit Blog</button>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact">
-    <div class="container">
-      <h2>Let's Connect</h2>
-      <p>Open for collaborations, cybersecurity projects, and creative builds.</p>
-      <button class="btn">Reach Out</button>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <p>© 2025 Cybernerddd • All Rights Reserved</p>
+  <footer>
+    <p>Built with ❤️ by Cybernerddd. Hosted on GitHub Pages.</p>
   </footer>
-
-  <script>
-    const html = document.documentElement;
-    const toggle = document.getElementById('themeToggle');
-
-    toggle.addEventListener('click', () => {
-      html.classList.toggle('light');
-    });
-  </script>
 </body>
 </html>

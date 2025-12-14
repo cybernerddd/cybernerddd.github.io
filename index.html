@@ -1,72 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cybernerddd</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cybernerddd | Red Team & Web Security</title>
+  <meta name="description" content="Cybernerddd – Ethical Hacker, Red Team Trainee, Web Application Security Specialist." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
-      color: #00ffe7;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
+      font-family: 'JetBrains Mono', monospace;
+      background: radial-gradient(circle at top, #0f172a, #020617);
+      color: #e5e7eb;
+      line-height: 1.6;
     }
+    a { color: #22c55e; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1100px; margin: auto; padding: 2rem; }
     header {
-      padding: 2rem;
+      display: flex; flex-direction: column; gap: 1.2rem; padding: 3rem 0;
     }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+    .tag { color: #22c55e; font-size: 0.9rem; }
+    h1 { font-size: 2.8rem; }
+    h2 { margin-bottom: 1rem; font-size: 1.6rem; }
+    p { color: #cbd5f5; }
+    .cta {
+      margin-top: 1.5rem;
+      display: flex; gap: 1rem; flex-wrap: wrap;
     }
-    p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0 auto 2rem;
-    }
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-    .skill {
-      background: #1f1f2e;
-      border: 1px solid #00ffe7;
-      padding: 1rem;
+    .btn {
+      border: 1px solid #22c55e;
+      padding: 0.7rem 1.2rem;
       border-radius: 8px;
-      width: 200px;
+      background: transparent;
+      color: #22c55e;
+      font-weight: 600;
+      transition: all 0.2s ease;
     }
+    .btn:hover { background: #22c55e; color: #020617; }
+    section { margin-top: 4rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(34, 197, 94, 0.25);
+      padding: 1.5rem;
+      border-radius: 14px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 0 25px rgba(34,197,94,0.15); }
     footer {
+      margin-top: 5rem;
+      padding: 2rem 0;
+      border-top: 1px solid rgba(34,197,94,0.2);
+      text-align: center;
       font-size: 0.9rem;
-      color: #888;
-      margin-top: 2rem;
+      color: #94a3b8;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Cybernerddd</h1>
-    <p>Aspiring cybersecurity enthusiast mastering web app hacking, OWASP Top 10, Python, and automation. Passionate about securing web apps and exploring OSINT techniques.</p>
-  </header>
-  <section class="skills">
-    <div class="skill">Python & Recon Tools</div>
-    <div class="skill">Web Automation & Anti-Bot Bypass</div>
-    <div class="skill">Massive Dataset Structuring</div>
-    <div class="skill">Next.js & UI/UX Debugging</div>
-    <div class="skill">SaaS MVP Architectures</div>
-    <div class="skill">Donor/Medical Web Apps</div>
-    <div class="skill">Digital Business Card Platforms</div>
-  </section>
-  <footer>
-    <p>Built with ❤️ by Cybernerddd. Hosted on GitHub Pages.</p>
-  </footer>
+  <div class="container">
+
+    <header>
+      <span class="tag">0x08 | RED TEAM TRAINEE</span>
+      <h1>Cybernerddd</h1>
+      <p>
+        Ethical Hacker & Cybersecurity Student focused on <strong>Web Application Security</strong>,
+        <strong>Red Team Operations</strong>, and <strong>Offensive Python Tooling</strong>.
+        I document my learning, build tools, and simulate real-world attacks — legally.
+      </p>
+      <div class="cta">
+        <a class="btn" href="https://github.com/cybernerddd" target="_blank">GitHub</a>
+        <a class="btn" href="https://www.tryhackme.com/p/cybernerddd" target="_blank">TryHackMe</a>
+        <a class="btn" href="https://www.linkedin.com/in/emmanuel-a-284803370/" target="_blank">LinkedIn</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I'm a dedicated cybersecurity student based in Ghana, building deep skills in
+        ethical hacking and red teaming. My primary focus is <strong>web application hacking</strong>
+        (OWASP Top 10, real-world misconfigurations, XSS, CSRF, auth flaws), with growing
+        experience in phishing simulations, OSINT, and payload delivery.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills & Focus</h2>
+      <div class="grid">
+        <div class="card">Web Application Hacking (OWASP Top 10)</div>
+        <div class="card">Red Team Fundamentals & Phishing</div>
+        <div class="card">Python for Pentesting & Automation</div>
+        <div class="card">Kali Linux & Offensive Tooling</div>
+        <div class="card">TryHackMe Labs & CTF Practice</div>
+        <div class="card">AV / EDR Evasion (Learning)</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>CNR Multi-Tool</strong>
+          <p>A growing Python-based offensive security CLI tool featuring port scanning,
+             directory brute-forcing, and modular expansion.</p>
+        </div>
+        <div class="card">
+          <strong>Custom Python Attack Scripts</strong>
+          <p>Packet sniffers, ARP spoofers, MAC changers — refactored as clean CLI tools
+             and documented for learning.</p>
+        </div>
+        <div class="card">
+          <strong>XSS Payload Research</strong>
+          <p>Daily payload crafting, bypass techniques, and DOM XSS experimentation
+             on real labs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Certs & Platforms</h2>
+      <p>
+        CompTIA Security+ (in progress), TryHackMe (44+ rooms), hands-on labs,
+        and continuous red team simulation training.
+      </p>
+    </section>
+
+    <footer>
+      © 2025 Cybernerddd · Built with focus, curiosity, and discipline.
+    </footer>
+
+  </div>
 </body>
 </html>
